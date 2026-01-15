@@ -7,6 +7,7 @@ import camera from "./images/camera.png";
 import depo from "./images/depo1.png";
 import smartphone from "./images/smartphone.png";
 import processor from "./images/processor.png";
+import ekran from "./images/ekran-b.png";
 import "./Poster.css";
 
 export default function Poster() {
@@ -17,15 +18,18 @@ export default function Poster() {
     model: "A17 5G",
     subtitle1: "Uygun Fiyatlı Performans ",
     subtitle: "ve Güçlü 5G Bağlantısı",
-    cam: "50MP Üçlü Kamera",
+    cam: "Amoled Ekran",
     front: "8 MP Ön Kamera",
     battery: "5000mAh Pil",
-    screen: "6.6 FHD+ Ekran",
     screen1: "90Hz Ekran Yenileme Hızı",
+    camera: "50MP Üçlü Kamera",
+    screen: "6.6 FHD+ Ekran",
+    wat: "15W Hızlı Şarj",
     cpu: "8 Çekirdekli İşlemci",
     ram: "6GB RAM",
     depo: "128GB Depolama",
-    charge: "15W Hızlı Şarj",
+    giga: "5G",
+    tera: "1TB",
     android: "Android 15",
     nfc: "NFC Destekli",
     image: null,
@@ -84,7 +88,7 @@ export default function Poster() {
         <div className="middle">
           <div className="row">
             <div className="icon">
-              <img src={camera} alt="Kamera" />
+              <img src={ekran} alt="Kamera" />
             </div>
 
             <div>
@@ -119,9 +123,9 @@ export default function Poster() {
                   <img src={camera} alt="Kamera" />
                 </div>
                 <div>
-                  <strong>50 MP</strong>
-                  <br />
-                  Üçlü Kamera
+                  <strong>{data.camera}</strong>
+                
+                 
                 </div>
               </div>
               <div className="td">
@@ -129,9 +133,7 @@ export default function Poster() {
                   <img src={smartphone} alt="Kamera" />
                 </div>
                 <div>
-                  <strong>6.6” FHD+</strong>
-                  <br />
-                  Ekran
+                  <strong>{data.screen}</strong>
                 </div>
               </div>
               <div className="td">
@@ -139,7 +141,7 @@ export default function Poster() {
                   <img src={charge} alt="Kamera" />
                 </div>
                 <div>
-                  <strong>5000mAh</strong>
+                  <strong>{data.wat}</strong>
                 </div>
                 <br />
               </div>
@@ -173,8 +175,8 @@ export default function Poster() {
             </div>
 
             <div className="table-badges">
-              <div className="badge">5G Destekli İşlemci</div>
-              <div className="badge">1TB’ye Kadar microSD</div>
+              <div className="badge">{data.giga} Destekli İşlemci</div>
+              <div className="badge">{data.tera}'e Kadar microSD</div>
             </div>
             <div className="table-badges">
               <div className="badge1">{data.android}</div>
