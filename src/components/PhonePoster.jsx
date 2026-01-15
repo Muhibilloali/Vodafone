@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
 import html2canvas from "html2canvas";
-import vodafone from "./images/Vodafone_Logo_2017.png";
+import ram from "./images/ram.png";
+import charge from "./images/charge1.png";
+import pil from "./images/pil.png";
 import camera from "./images/camera.png";
-import wireless from "./images/wireless.png";
+import depo from "./images/depo1.png";
 import smartphone from "./images/smartphone.png";
 import processor from "./images/processor.png";
 import "./Poster.css";
@@ -21,8 +23,11 @@ export default function Poster() {
     screen: "6.6 FHD+ Ekran",
     screen1: "90Hz Ekran Yenileme Hızı",
     cpu: "8 Çekirdekli İşlemci",
-    ram: "6GB RAM + 128GB Depolama",
+    ram: "6GB RAM",
+    depo: "128GB Depolama",
     charge: "15W Hızlı Şarj",
+    android: "Android 15",
+    nfc: "NFC Destekli",
     image: null,
   });
 
@@ -91,7 +96,7 @@ export default function Poster() {
 
           <div className="row">
             <div className="icon">
-              <img src={wireless} alt="Kamera" />
+              <img src={pil} alt="Kamera" />
             </div>
             <div>
               <strong>{data.battery}</strong>
@@ -103,20 +108,16 @@ export default function Poster() {
           <div className="table">
             <div className="table-head">
               <div className="th"> Kamera</div>
-            
+
               <div className="th"> Ekran</div>
-              <div className="th">
-                {" "}
-                
-                Pil
-              </div>
+              <div className="th"> Pil</div>
             </div>
 
             <div className="table-row">
               <div className="td">
-                 <div className="icon">
-              <img src={camera} alt="Kamera" />
-            </div>
+                <div className="icon">
+                  <img src={camera} alt="Kamera" />
+                </div>
                 <div>
                   <strong>50 MP</strong>
                   <br />
@@ -135,7 +136,7 @@ export default function Poster() {
               </div>
               <div className="td">
                 <div className="icon">
-                  <img src={wireless} alt="Kamera" />
+                  <img src={charge} alt="Kamera" />
                 </div>
                 <div>
                   <strong>5000mAh</strong>
@@ -146,33 +147,44 @@ export default function Poster() {
 
             <div className="table-row">
               <div className="td">
-                 <div className="icon">
-  <img src={processor} alt="Kamera" />
-</div>
+                <div className="icon">
+                  <img src={processor} alt="Kamera" />
+                </div>
                 <div>
                   <strong>{data.cpu}</strong>
                 </div>
               </div>
               <div className="td">
-                <div className="icon">💾</div>
+                <div className="icon">
+                  <img src={ram} alt="Kamera" />
+                </div>
                 <div>
                   <strong>{data.ram}</strong>
                 </div>
               </div>
-              {/* <div className="td">
-                <div className="icon">⚡</div>
-                <div><strong>{data.charge}</strong></div>
-              </div> */}
+              <div className="td">
+                <div className="icon">
+                  <img src={depo} alt="Kamera" />
+                </div>
+                <div>
+                  <strong>{data.depo}</strong>
+                </div>
+              </div>
             </div>
 
             <div className="table-badges">
               <div className="badge">5G Destekli İşlemci</div>
               <div className="badge">1TB’ye Kadar microSD</div>
             </div>
+            <div className="table-badges">
+              <div className="badge1">{data.android}</div>
+              <div className="badge1">{data.nfc}</div>
+            </div>
           </div>
         </div>
 
-        <div className="footer">Vodafone
+        <div className="footer">
+          Vodafone
           {/* <img src={vodafone} alt="Vodafone" className="vodafone-logo" /> */}
         </div>
       </div>
