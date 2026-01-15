@@ -9,6 +9,7 @@ import depo from "./images/depo1.png";
 import smartphone from "./images/smartphone.png";
 import processor from "./images/processor.png";
 import ekran from "./images/ekran-b.png";
+import vodologo from "./images/vodo-logo.png";
 import "./Poster.css";
 
 export default function Poster() {
@@ -200,8 +201,8 @@ export default function Poster() {
         </div>
 
         <div className="footer">
-          Vodafone
-          {/* <img src={vodafone} alt="Vodafone" className="vodafone-logo" /> */}
+          <p className="logo-name">Vodafone</p>
+          {/* <img src={vodologo} alt="Vodafone" className="vodafone-logo" /> */}
         </div>
       </div>
     </div>
