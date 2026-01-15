@@ -4,6 +4,7 @@ import ram from "./images/ram.png";
 import charge from "./images/charge1.png";
 import pil from "./images/pil.png";
 import camera from "./images/camera.png";
+import color from "./images/color1.png";
 import depo from "./images/depo1.png";
 import smartphone from "./images/smartphone.png";
 import processor from "./images/processor.png";
@@ -18,6 +19,7 @@ export default function Poster() {
     model: "A17 5G",
     subtitle1: "Uygun Fiyatlı Performans ",
     subtitle: "ve Güçlü 5G Bağlantısı",
+    color: "🔴🟠🟢⚪⚫",
     cam: "Amoled Ekran",
     front: "8 MP Ön Kamera",
     battery: "5000mAh Pil",
@@ -86,6 +88,18 @@ export default function Poster() {
         </div>
 
         <div className="middle">
+<div className="row">
+            <div className="icon">
+              <img src={color} alt="Kamera" />
+            </div>
+
+            <div>
+              <strong>{data.color}</strong>
+              <br />
+              {/* <small>{data.front}</small> */}
+            </div>
+          </div>
+
           <div className="row">
             <div className="icon">
               <img src={ekran} alt="Kamera" />
