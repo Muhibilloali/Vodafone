@@ -20,7 +20,6 @@ export default function Poster() {
     model: "A17 5G",
     subtitle1: "Uygun Fiyatlı Performans ",
     subtitle: "ve Güçlü 5G Bağlantısı",
-    color: "🔴🟠🟢⚪⚫",
     cam: "Amoled Ekran",
     front: "8 MP Ön Kamera",
     battery: "5000mAh Pil",
@@ -90,15 +89,9 @@ export default function Poster() {
 
         <div className="middle">
 <div className="row">
-            <div className="icon">
-              <img src={color} alt="Kamera" />
-            </div>
+           
 
-            <div>
-              <strong>{data.color}</strong>
-              <br />
-              {/* <small>{data.front}</small> */}
-            </div>
+            
           </div>
 
           <div className="row">
@@ -201,7 +194,7 @@ export default function Poster() {
         </div>
 
         <div className="footer">
-          <p className="logo-name">Vodafone</p>
+          <p className="logo-name">RMZ</p>
           {/* <img src={vodologo} alt="Vodafone" className="vodafone-logo" /> */}
         </div>
       </div>
